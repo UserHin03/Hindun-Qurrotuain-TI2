@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript 2</title>
+</head>
+<body>
+    <h2>Dollar ke Rupiah</h2>
+    <form>
+        <label for="Dollar">Dollar : </label><input type="text" id="Dollar">
+        <br> </br>
+        <label for="Kurs Rupiah">Kurs Rupiah : </label><input type="text" id="Kurs Rupiah">
+        <br></br>
+        <input type="button"  value="Hitung" onclick="hitung_dollar()"></button>
+        <br> </br>
+        <label for="Hasil">Hasil : </label><input type="text" id="Hasil">
+    </form>
+
+    <h2>Rupiah ke Dollar</h2>
+    <form>
+        <label for="Rupiah">Rupiah : </label><input type="text" id="Rupiah">
+        <br></br>
+        <input type="button" value="Hitung" onclick="hitung_rupiah()"></button>
+        <br> </br>
+        <label for="Hasil">Hasil : </label><input type="text" id="Hasil2">
+    </form>
+    <!--Kode JS-->
+    <script>
+        function hitung_dollar(){
+            let Dollar = document.getElementById ("Dollar").value;
+            let Rupiah = document.getElementById ("Kurs Rupiah").value;
+            let Hasil = Dollar * Rupiah;
+            document.getElementById ("Hasil").value = Hasil;
+        }
+
+        function hitung_rupiah(){
+            let Rupiah = document.getElementById("Rupiah").value;
+            let Hasil = Rupiah * (1/14650);
+            document.getElementById("Hasil2").value = "$" + Hasil;
+        }
+    </script>
+</body>
+</html>

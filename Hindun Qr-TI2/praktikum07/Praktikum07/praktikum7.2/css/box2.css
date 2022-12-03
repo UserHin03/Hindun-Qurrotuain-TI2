@@ -1,0 +1,13 @@
+/* style untuk koleksi */
+.koleksi {
+    background-color: lightyellow;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* style untuk koleksi img */
+.koleksi img {
+    width: 200px;
+}
