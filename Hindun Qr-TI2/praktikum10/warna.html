@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratikum.3</title>
+</head>
+<body>
+    <input type="button" value="ubah warna" id="ubah">
+
+    <script>
+        let buttonUbah= document.getElementById('ubah');
+
+       buttonUbah.addEventListener('click',function(){
+
+            let colors = ['blue','red','green'];
+            let random = Math.round(Math.random()*1)
+
+            document.getElementsByTagName('body')[0].style=`background-color: ${colors[random]}`
+        })
+    </script>
+</body>
+</html>
